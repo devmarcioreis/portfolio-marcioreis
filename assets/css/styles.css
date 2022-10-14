@@ -37,7 +37,6 @@
     --btn-padding: .6rem 2rem;
     --card-padding: 1rem;
     
-    --sticky-top-right: 18rem;
 }
 
 /*==========Base==========*/
@@ -235,7 +234,21 @@ main .container .left .handle {
     border-radius: .2rem;
 }
 
-
-
-
 /*==========Right==========*/
+main .container .right {
+    height: max-content;
+    position: sticky;
+    top: 5.5rem;
+    bottom: 0;
+}
+.right .messeges {
+    background: var(--white-color);
+    border-radius: .5rem;
+    padding: var(--card-padding);
+}
+.right .messeges .heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
