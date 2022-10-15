@@ -20,14 +20,10 @@
 :root {
     --dark-color: #241e38;
     --white-color: #fff;
-    --black-color: #000;
     --light-color: #f0eef6;
     --gray-color: #333;
     --primary-color: #6b4ce6;
-    --secundary-color: #d6ccff;
-    --sucess-color: #51fb51;
     --danger-color: #fb5151;
-    --dark-color: #241e38;
 
     --principal-font: 'Poppins', sans-serif;
     --logo-font: 'Nunito', sans-serif;
@@ -251,4 +247,86 @@ main .container .right {
     align-items: center;
     justify-content: space-between;
     margin-bottom: 1rem;
+}
+.right .messeges i {
+    font-size: 1.2rem;
+}
+.right .messeges .search-bar {
+    display: flex;
+    margin-bottom: 1rem;
+    background: var(--light-color);
+    border-radius: 4rem;
+    padding: .6rem;
+}
+.right .messeges .search-bar input[type="search"] {
+    background: transparent;
+    width: 30vw;
+    margin-left: 1rem;
+    font-size: .9rem;
+    color: var(--dark-color);
+}
+.right .messeges .search-bar input[type="search"]::placeholder {
+    color: var(--gray-color);
+}
+.right .messeges .category {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.right .messeges .category h6 {
+    width: 100%;
+    text-align: center;
+    border-bottom: 4px solid var(--light-color);
+    padding-bottom: .5rem;
+    font-size: .7rem;
+}
+.right .messeges .category .active {
+    border-color: var(--primary-color);
+}
+.right .messeges .messege {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+.right .messeges .messege:last-child {
+    margin: 0;
+}
+.right .messeges .messege p {
+    font-size: .8;
+}
+.right .friend-requests {
+    margin-top: 1rem;
+}
+.right .friend-requests h4 {
+    color: var(--gray-color);
+    margin: 1rem 0;
+}
+.right .request {
+    background: var(--white-color);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    margin-bottom: .7rem;
+}
+.right .request .info {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+.right .request .action {
+    display: flex;
+    gap: 1rem;
+}
+.right .action .btn-primary {
+    background: var(--primary-color);
+}
+.right .action .btn-action {
+    background: var(--danger-color);
+    color: var(--white-color);
+}
+
+
+/*==========Media Query==========*/
+@media (max-width: 1200px) {
+    
 }
